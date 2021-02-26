@@ -1,0 +1,80 @@
+<!DOCTIPE HTML>
+<html>
+	<head>
+		<title> FORM REGISTER </title>
+	</head>
+	<body bgcolor="beige" text="black">
+		<h1 align="center"> Form Registration PENDEKAR Mengajar Indonesia Batch III </h1>
+		<hr/>
+	<body>
+		<form action="proses.php" method="POST"> 
+		<fieldset style="background-color:gray;">
+			
+			<h2>BIODATA PRIBADI</h2>
+			<div>
+				<label> Nama Lengkap </label>
+				<div>
+					<input type="text" name="nama" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label for="tanggal_lahir">Tanggal Lahir</label>
+				<div>
+					<input type="date" name="tanggal_lahir" value="2001-08-04" id="tanggal_lahir" />
+				</div>
+			</div>
+			<div>
+				<label> Jenis Kelamin </label>
+				<div>
+					<input type="radio" name="jk" value="L" checked />Laki-Laki
+					<input type="radio" name="jk" value="P"  />Perempuan
+				</div>
+			</div>
+			<div>
+				<label> Asal Universitas/Lembaga </label>
+				<div>
+					<input type="text" name="asal" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label> Email </label>
+				<div>
+					<input type="text" name="email" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label> No HP </label>
+				<div>
+					<input type="text" name="no hp" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label> Id Line </label>
+				<div>
+					<input type="text" name="line" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<label> Alamat </label>
+				<div>
+					<textarea name="alamat" rows="4" cols="30"></textarea>
+				</div>
+			</div>
+			<div>
+				<label> Pilihan Bidang </label>
+				<div>
+					<select name="bidang">
+						<option value="">--Pilih--</option>
+						<option value="pend">Pendidikan</option>
+						<option value="kesehatan">Kesehatan</option>
+						<option value="kesejahteraan">Kesejahteraan Masyarakat</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+		<div>
+			<input type="Submit" value="Submit" name="Proses" />
+		</div>
+		</form>
+	</body>
+</html>
