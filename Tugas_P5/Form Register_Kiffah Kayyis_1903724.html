@@ -1,0 +1,119 @@
+<!DOCTIPE HTML>
+<html>
+	<head>
+		<title> FORM REGISTER </title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<style>
+			body{
+				background-color:blue;
+			}
+			h1{
+				color:white;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+		<style>
+			p {
+				margin-left: 1.5em;
+			}
+			
+			#nf {
+				color:red;
+			}
+			.ganjil{
+				color:yellow;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body bgcolor="blue" text="white">
+		<h1 align="center"> Form Registration</h1>
+		<h2 style="font-size:20px;color:red;text-align:center"> Form Registration PENDEKAR Mengajar Indonesia Batch III</h2>
+		<hr/>
+	<body>
+		<form action="proses.php" method="POST"> 
+		<fieldset style="background-color:beige;">
+			
+			<h2 class="ganjil">BIODATA PRIBADI</h2>
+			<div>
+				<p id="nf">
+				<label> Nama Lengkap </label>
+				<div>
+					<input type="text" name="nama" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label for="tanggal_lahir">Tanggal Lahir</label>
+				<div>
+					<input type="date" name="tanggal_lahir" value="2001-08-04" id="tanggal_lahir" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Jenis Kelamin </label>
+				<div>
+					<input type="radio" name="jk" value="L" checked />Laki-Laki
+					<input type="radio" name="jk" value="P"  />Perempuan
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Asal Universitas/Lembaga </label>
+				<div>
+					<input type="text" name="asal" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Email </label>
+				<div>
+					<input type="text" name="email" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> No HP </label>
+				<div>
+					<input type="text" name="no hp" value="" size="30" />
+				</div>
+				</p>
+			</div>
+			<div>
+				<label> Id Line </label>
+				<div>
+					<input type="text" name="line" value="" size="30" />
+				</div>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Alamat </label>
+				<div>
+					<textarea name="alamat" rows="4" cols="30"></textarea>
+				</div>
+				</p>
+			</div>
+			<div>
+				<p id="nf">
+				<label> Pilihan Bidang </label>
+				<div>
+					<select name="bidang">
+						<option value="">--Pilih--</option>
+						<option value="pend">Pendidikan</option>
+						<option value="kesehatan">Kesehatan</option>
+						<option value="kesejahteraan">Kesejahteraan Masyarakat</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+		<div>
+			<input type="Submit" value="Submit" name="Proses" />
+		</div>
+		</form>
+	</body>
+</html>
